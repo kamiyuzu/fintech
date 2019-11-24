@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.21.2">
+    <meta name="project" content="fintech v0.1.0">
+    <title>Fintech — fintech v0.1.0</title>
+    <link rel="stylesheet" href="dist/html-de2388dc2f8074b0a4db.css" />
+    <script src="dist/sidebar_items-b7aa75f853.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-de2388dc2f8074b0a4db.js"></script>
+  </head>
+  <body data-type="extras">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+fintech      </a>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+<h1>Fintech</h1>
+<h2 id="postgres" class="section-heading">
+  <a href="#postgres" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Postgres
+</h2>
+
+<p>We need a username: postgres password: postgres to test this project</p>
+<h2 id="starting-phoenix-server" class="section-heading">
+  <a href="#starting-phoenix-server" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Starting Phoenix server:
+</h2>
+
+<ul>
+<li><p>Install dependencies with:</p>
+<pre><code class="nohighlight makeup elixir"><span class="n">mix</span><span class="w"> </span><span class="n">deps</span><span class="o">.</span><span class="n">get</span></code></pre>
+</li>
+<li><p>Create and migrate your database with:</p>
+<pre><code class="nohighlight makeup elixir"><span class="n">mix</span><span class="w"> </span><span class="n">ecto</span><span class="o">.</span><span class="n">setup</span></code></pre>
+</li>
+<li><p>Install Node.js dependencies with:</p>
+<pre><code class="nohighlight makeup elixir"><span class="n">cd</span><span class="w"> </span><span class="n">assets</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">npm</span><span class="w"> </span><span class="n">install</span></code></pre>
+</li>
+<li><p>Start Phoenix endpoint with:</p>
+<pre><code class="nohighlight makeup elixir"><span class="n">mix</span><span class="w"> </span><span class="n">phx</span><span class="o">.</span><span class="n">server</span></code></pre>
+</li>
+</ul>
+<p>Now you can visit <a href="http://localhost:4000"><code class="inline">localhost:4000</code></a> from your browser.</p>
+<h2 id="purpose" class="section-heading">
+  <a href="#purpose" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Purpose
+</h2>
+
+<p>The purpose of this project is to acquire knowledge in phoenix framework as well as also fulfill Pagantis technical test.</p>
+<h2 id="implementation" class="section-heading">
+  <a href="#implementation" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Implementation
+</h2>
+
+<h3 id="entities" class="section-heading">
+  <a href="#entities" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Entities
+</h3>
+
+<h4>Banks</h4>
+<p>This entity holds the representation for a bank.</p>
+<h4>Customers</h4>
+<p>This entity holds the representation for a customer from a bank.</p>
+<h4>Accounts</h4>
+<p>This entity holds the representation for an account from a customer.</p>
+<h4>Transferences</h4>
+<p>This entity holds the representation for a transference from an account.</p>
+<h3 id="transferagent" class="section-heading">
+  <a href="#transferagent" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  TransferAgent
+</h3>
+
+<h4>Testing</h4>
+<ul>
+<li><p>Test the transfer Agent with iex interface:</p>
+<pre><code class="nohighlight makeup elixir"><span class="sc">&#39;iex -S phx.server&#39;</span><span class="w">
+</span><span class="sc">&#39;{:ok, _} = Fintech.TransferAgent.start_link([])&#39;</span><span class="w">
+</span><span class="sc">&#39;alias Fintech.Transferences.Transference&#39;</span><span class="w">
+</span><span class="sc">&#39;Fintech.TransferAgent.transfer({:intra, %Transference{account_id: 1, quantity: 100}})&#39;</span></code></pre>
+</li>
+</ul>
+<h3 id="metrics" class="section-heading">
+  <a href="#metrics" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Metrics
+</h3>
+
+<p>I listened to a recent podcast from <a href="https://runninginproduction.com/podcast/1-a-medical-web-app-at-a-university-with-gabriel-robertson">OvermindDL1</a> a well known user from the Erlang/Elixir community, and core team member for: ldap_ex and permission_ex. He mentioned some useful tools one being telemetry from Erlang which I haven&#39;t used it since this same project.</p>
+<p>I couldn’t imagine the setup for telemetry was that easy, the potential and configuration from this dependency is huge.</p>
+<h3 id="logging" class="section-heading">
+  <a href="#logging" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Logging
+</h3>
+
+<p>I used Logger to perform the required logging for specific parts for the project.</p>
+<h3 id="deployment" class="section-heading">
+  <a href="#deployment" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Deployment
+</h3>
+
+<p>I used distilery for deployment of this project. I haven&#39;t tested yet the new deployment system from elixir 1.9 but I would check it in the future for sure.
+Also I would check out how to integrate docker with the distilery image.</p>
+<ul>
+<li><p>Walthrough:</p>
+<p>  # start a shell, like &#39;iex -S mix&#39;</p>
+<blockquote><p>_build/dev/rel/fintech/bin/fintech.bat console</p>
+</blockquote>
+<p>  # start in the foreground, like &#39;mix run --no-halt&#39;</p>
+<blockquote><p>_build/dev/rel/fintech/bin/fintech.bat foreground</p>
+</blockquote>
+<p>  # start in the background, must be stopped with the &#39;stop&#39; command</p>
+<blockquote><p>_build/dev/rel/fintech/bin/fintech.bat start</p>
+</blockquote>
+<p>  If you started a release elsewhere, and wish to connect to it:</p>
+<p>  # connects a local shell to the running node</p>
+<blockquote><p>_build/dev/rel/fintech/bin/fintech.bat remote_console</p>
+</blockquote>
+<p>  # connects directly to the running node&#39;s console</p>
+<blockquote><p>_build/dev/rel/fintech/bin/fintech.bat attach</p>
+</blockquote>
+<p>  For a complete listing of commands and their use:</p>
+<blockquote><p>_build/dev/rel/fintech/bin/fintech.bat help</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="docs" class="section-heading">
+  <a href="#docs" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Docs
+</h3>
+
+<p>Never used exdocs in any of my personal project, but is really easy to use and not gonna lie it&#39;s awesome. Just by using documenting attributes in the project you can create this same documentation.</p>
+<h3 id="testing" class="section-heading">
+  <a href="#testing" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Testing
+</h3>
+
+<p>I have added some extra validations for the entities changesets I have never used before. I had to comment some of the generated tests because I couldn&#39;t fix them. I haven&#39;t used ecto associations well enough. Also this whole project the main difficulty for me has been the ecto associations.</p>
+<p>I never used doctests before and I tested some trivial functions because I didn&#39;t know how to test a database operating function. I found doctest really easy to setup and to integrate into the docs.</p>
+<h2 id="questions" class="section-heading">
+  <a href="#questions" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Questions:
+</h2>
+
+<h3 id="how-would-you-improve-your-solution-what-would-be-the-next-steps" class="section-heading">
+  <a href="#how-would-you-improve-your-solution-what-would-be-the-next-steps" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  How would you improve your solution? What would be the next steps?
+</h3>
+
+<p>My whole project can be improved in every technical area. I don&#39;t think I have the knowledge to say any of the areas I tried to implement are efficient enough or good enough. I still have a long journey into the Elixir path.</p>
+<p>The next step would be to assign into the database the user. Although we can do transferences via iex and calling the GenServer, it would be really nice to do transferences from the transference new view from phoenix. However we first need to assign the user into the actual phoenix conn.</p>
+<p>I have done previously a project using github oauth <a href="https://github.com/kamigari/The-Complete-Elixir-and-Phoenix-Bootcamp">The-Complete-Elixir-and-Phoenix-Bootcamp</a> related but not the solution we need. We would rather need a login form and assign that user into the phoenix connection.</p>
+<h3 id="after-implementation-is-there-any-design-decision-that-you-would-have-done-differently" class="section-heading">
+  <a href="#after-implementation-is-there-any-design-decision-that-you-would-have-done-differently" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  After implementation, is there any design decision that you would have done differently?
+</h3>
+
+<p>We could create another entity: transaction. This will be in charge of doing the micro transferences from a single transference when a full transference is out of the established scope.</p>
+<h3 id="how-would-you-adapt-your-solution-if-transfers-are-not-instantaneous" class="section-heading">
+  <a href="#how-would-you-adapt-your-solution-if-transfers-are-not-instantaneous" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  How would you adapt your solution if transfers are not instantaneous?
+</h3>
+
+<p>I would use the GenServer that I created on the Transfer Agent and use the state to save the state of the transferences being taken place. This solution would use an existing implementation. In one hand we could reimplement the solution by using a cached solution using cachex, which is based by ETS and was also highlighted by <a href="https://runninginproduction.com/podcast/1-a-medical-web-app-at-a-university-with-gabriel-robertson">OvermindDL1</a>, if we are in need of a faster solution. On the other hand we can use a disk based solution if we aren&#39;t in the need of window of response, this would be implementing a disk based batch for night execution.</p>
+<h2 id="disclaimer" class="section-heading">
+  <a href="#disclaimer" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Disclaimer
+</h2>
+
+<p>I have an exam on 28 of november, so I can’t work any further into this project. The most time consuming part from this technical test was ecto associations and how to work with them. The remaining parts were also hard because was the first time I had used them but I found it fairly easy to make them working.</p>
+<p>This project was done during the weekend from the spare hours I could get from studying and working from my second job as waiter for &#39;El mentidero de la villa&#39;.</p>
+<h2 id="prerequisites" class="section-heading">
+  <a href="#prerequisites" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Prerequisites
+</h2>
+
+<ul>
+<li>To run this project you need:
+</li>
+<li>Erlang: The programming language <a href="http://www.erlang.org">http://www.erlang.org</a>/
+</li>
+<li>Elixir: The programming language <a href="https://elixir-lang.org">https://elixir-lang.org</a>/
+</li>
+</ul>
+<h2 id="built-within" class="section-heading">
+  <a href="#built-within" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Built within
+</h2>
+
+<ul>
+<li>Elixir: The programming language <a href="https://elixir-lang.org">https://elixir-lang.org</a>/
+</li>
+<li>Phoenix: Web framework in Elixir <a href="http://www.phoenixframework.org">http://www.phoenixframework.org</a>/
+</li>
+</ul>
+<h2 id="authors" class="section-heading">
+  <a href="#authors" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Authors
+</h2>
+
+<ul>
+<li><strong>Alberto Revuelta Arribas</strong> - <em>initial work</em><a href="https://github.com/kamigari">kamigari</a>
+</li>
+</ul>
+<h2 id="license" class="section-heading">
+  <a href="#license" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  License
+</h2>
+
+<ul>
+<li>This project is licensed under the License - see the <a href="LICENSE.md">LICENSE.md</a> file for details.
+</li>
+</ul>
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.21.2),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  </body>
+</html>

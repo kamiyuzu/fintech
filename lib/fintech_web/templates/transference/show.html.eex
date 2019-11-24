@@ -1,0 +1,13 @@
+<h1>Show Transference</h1>
+
+<ul>
+
+  <li>
+    <strong>Quantity:</strong>
+    <%= @transference.quantity %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.transference_path(@conn, :edit, @transference) %></span>
+<span><%= link "Back", to: Routes.transference_path(@conn, :index) %></span>

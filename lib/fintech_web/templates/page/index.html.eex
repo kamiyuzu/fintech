@@ -1,0 +1,43 @@
+<br/>
+<section class="phx-hero">
+  <h1>Pagantis Technical test</h1>
+  <p>Project regarding technical test for Pagantis<br/>This is a project to meet requirements for pagantis techinical test.</p>
+  <br/>
+  <p>Required entities for the project:</p>
+  <ul>
+    <li>
+      <%= link "Banks", to: Routes.bank_path(@conn, :index) %>
+    </li>
+    <li>
+      <%= link "Customers", to: Routes.customer_path(@conn, :index) %>
+    </li>
+    <li>
+      <%= link "Accounts", to: Routes.account_path(@conn, :index) %>
+    </li>
+    <li>
+      <%= link "Transferences", to: Routes.transference_path(@conn, :index) %>
+    </li>
+  </ul>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Personal interests</h2>
+    <ul>
+      <li>
+        <a href="https://elixir-lang.org/">Elixir</a>
+      </li>
+      <li>
+        <a href="https://www.rust-lang.org/">Rust</a>
+      </li>
+    </ul>
+  </article>
+  <article class="column">
+    <h2>About me</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/kamigari">Github</a>
+      </li>
+    </ul>
+  </article>
+</section>

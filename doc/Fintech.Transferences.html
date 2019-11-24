@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.21.2">
+    <meta name="project" content="fintech v0.1.0">
+    <title>Fintech.Transferences — fintech v0.1.0</title>
+    <link rel="stylesheet" href="dist/html-de2388dc2f8074b0a4db.css" />
+    <script src="dist/sidebar_items-b7aa75f853.js"></script>
+      <script src="docs_config.js"></script>
+    <script async src="dist/html-de2388dc2f8074b0a4db.js"></script>
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode') === 'true') document.body.className += ' night-mode'; } catch (e) { }</script>
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button">
+      <span class="icon-cross" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" id="search-list" class="search-input" placeholder="Search..." aria-label="Search" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+fintech      </a>
+      <h2 class="sidebar-projectVersion">
+        v0.1.0
+      </h2>
+    </div>
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+        <small class="app-vsn">fintech v0.1.0</small>
+Fintech.Transferences          <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+      </h1>
+
+
+        <section id="moduledoc">
+<p>The Transferences context.</p>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_transference/1">change_transference(transference)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking transference changes.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_transference/1">create_transference(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a transference.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_transference/1">delete_transference(transference)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a Transference.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_transference!/1">get_transference!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single transference.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_transferences/0">list_transferences()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the list of transferences.</p></div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_transference/2">update_transference(transference, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a transference.</p></div>
+</div>
+  </div>
+        </section>
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions          </h1>
+          <div class="functions-list">
+<section class="detail" id="change_transference/1">
+  <div class="detail-header">
+    <a href="#change_transference/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">change_transference(transference)</h1>
+      <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L101" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking transference changes.</p>
+<h2 id="change_transference/1-examples" class="section-heading">
+  <a href="#change_transference/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_transference</span><span class="p" data-group-id="3987618564-1">(</span><span class="n">transference</span><span class="p" data-group-id="3987618564-1">)</span><span class="w">
+</span><span class="p" data-group-id="3987618564-2">%</span><span class="nc" data-group-id="3987618564-2">Ecto.Changeset</span><span class="p" data-group-id="3987618564-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3987618564-3">%</span><span class="nc" data-group-id="3987618564-3">Transference</span><span class="p" data-group-id="3987618564-3">{</span><span class="p" data-group-id="3987618564-3">}</span><span class="p" data-group-id="3987618564-2">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="create_transference/1">
+    <span id="create_transference/0"></span>
+  <div class="detail-header">
+    <a href="#create_transference/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_transference(attrs \\ %{})</h1>
+      <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L52" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+<p>Creates a transference.</p>
+<h2 id="create_transference/1-examples" class="section-heading">
+  <a href="#create_transference/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_transference</span><span class="p" data-group-id="0661797036-1">(</span><span class="p" data-group-id="0661797036-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="0661797036-2">}</span><span class="p" data-group-id="0661797036-1">)</span><span class="w">
+</span><span class="p" data-group-id="0661797036-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0661797036-4">%</span><span class="nc" data-group-id="0661797036-4">Transference</span><span class="p" data-group-id="0661797036-4">{</span><span class="p" data-group-id="0661797036-4">}</span><span class="p" data-group-id="0661797036-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_transference</span><span class="p" data-group-id="0661797036-5">(</span><span class="p" data-group-id="0661797036-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="0661797036-6">}</span><span class="p" data-group-id="0661797036-5">)</span><span class="w">
+</span><span class="p" data-group-id="0661797036-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0661797036-8">%</span><span class="nc" data-group-id="0661797036-8">Ecto.Changeset</span><span class="p" data-group-id="0661797036-8">{</span><span class="p" data-group-id="0661797036-8">}</span><span class="p" data-group-id="0661797036-7">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="delete_transference/1">
+  <div class="detail-header">
+    <a href="#delete_transference/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_transference(transference)</h1>
+      <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L88" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+<p>Deletes a Transference.</p>
+<h2 id="delete_transference/1-examples" class="section-heading">
+  <a href="#delete_transference/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_transference</span><span class="p" data-group-id="0165415021-1">(</span><span class="n">transference</span><span class="p" data-group-id="0165415021-1">)</span><span class="w">
+</span><span class="p" data-group-id="0165415021-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0165415021-3">%</span><span class="nc" data-group-id="0165415021-3">Transference</span><span class="p" data-group-id="0165415021-3">{</span><span class="p" data-group-id="0165415021-3">}</span><span class="p" data-group-id="0165415021-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_transference</span><span class="p" data-group-id="0165415021-4">(</span><span class="n">transference</span><span class="p" data-group-id="0165415021-4">)</span><span class="w">
+</span><span class="p" data-group-id="0165415021-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0165415021-6">%</span><span class="nc" data-group-id="0165415021-6">Ecto.Changeset</span><span class="p" data-group-id="0165415021-6">{</span><span class="p" data-group-id="0165415021-6">}</span><span class="p" data-group-id="0165415021-5">}</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="get_transference!/1">
+  <div class="detail-header">
+    <a href="#get_transference!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_transference!(id)</h1>
+      <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L38" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+<p>Gets a single transference.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the Transference does not exist.</p>
+<h2 id="get_transference!/1-examples" class="section-heading">
+  <a href="#get_transference!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_transference!</span><span class="p" data-group-id="9437865926-1">(</span><span class="mi">123</span><span class="p" data-group-id="9437865926-1">)</span><span class="w">
+</span><span class="p" data-group-id="9437865926-2">%</span><span class="nc" data-group-id="9437865926-2">Transference</span><span class="p" data-group-id="9437865926-2">{</span><span class="p" data-group-id="9437865926-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_transference!</span><span class="p" data-group-id="9437865926-3">(</span><span class="mi">456</span><span class="p" data-group-id="9437865926-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="list_transferences/0">
+  <div class="detail-header">
+    <a href="#list_transferences/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">list_transferences()</h1>
+      <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L20" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+<p>Returns the list of transferences.</p>
+<h2 id="list_transferences/0-examples" class="section-heading">
+  <a href="#list_transferences/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_transferences</span><span class="p" data-group-id="4110137288-1">(</span><span class="p" data-group-id="4110137288-1">)</span><span class="w">
+</span><span class="p" data-group-id="4110137288-2">[</span><span class="p" data-group-id="4110137288-3">%</span><span class="nc" data-group-id="4110137288-3">Transference</span><span class="p" data-group-id="4110137288-3">{</span><span class="p" data-group-id="4110137288-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="4110137288-2">]</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="update_transference/2">
+  <div class="detail-header">
+    <a href="#update_transference/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">update_transference(transference, attrs)</h1>
+      <a href="https://github.com/kamigari/blob/master/lib/fintech/transferences.ex#L70" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+  </div>
+  <section class="docstring">
+<p>Updates a transference.</p>
+<h2 id="update_transference/2-examples" class="section-heading">
+  <a href="#update_transference/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_transference</span><span class="p" data-group-id="8057533043-1">(</span><span class="n">transference</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8057533043-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="8057533043-2">}</span><span class="p" data-group-id="8057533043-1">)</span><span class="w">
+</span><span class="p" data-group-id="8057533043-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8057533043-4">%</span><span class="nc" data-group-id="8057533043-4">Transference</span><span class="p" data-group-id="8057533043-4">{</span><span class="p" data-group-id="8057533043-4">}</span><span class="p" data-group-id="8057533043-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_transference</span><span class="p" data-group-id="8057533043-5">(</span><span class="n">transference</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8057533043-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="8057533043-6">}</span><span class="p" data-group-id="8057533043-5">)</span><span class="w">
+</span><span class="p" data-group-id="8057533043-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8057533043-8">%</span><span class="nc" data-group-id="8057533043-8">Ecto.Changeset</span><span class="p" data-group-id="8057533043-8">{</span><span class="p" data-group-id="8057533043-8">}</span><span class="p" data-group-id="8057533043-7">}</span></code></pre>
+  </section>
+</section>
+          </div>
+        </section>
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.21.2),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  </body>
+</html>

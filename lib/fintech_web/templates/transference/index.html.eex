@@ -1,0 +1,26 @@
+<h1>Listing Transferences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quantity</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for transference <- @transferences do %>
+    <tr>
+      <td><%= transference.quantity %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.transference_path(@conn, :show, transference) %></span>
+        <span><%= link "Edit", to: Routes.transference_path(@conn, :edit, transference) %></span>
+        <span><%= link "Delete", to: Routes.transference_path(@conn, :delete, transference), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Transference", to: Routes.transference_path(@conn, :new) %></span>
