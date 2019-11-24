@@ -65,7 +65,7 @@ fintech      </a>
 
       <h1>
         <small class="app-vsn">fintech v0.1.0</small>
-Fintech.Repo          <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L1" title="View Source" class="view-source" rel="help">
+Fintech.Repo          <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L1" title="View Source" class="view-source" rel="help">
             <span class="icon-code" aria-hidden="true"></span>
             <span class="sr-only">View Source</span>
           </a>
@@ -330,7 +330,7 @@ Functions          </h1>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">aggregate(queryable, aggregate, field, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -364,15 +364,15 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Returns the number of visits per blog post</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">aggregate</span><span class="p" data-group-id="7947271407-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">:count</span><span class="p">,</span><span class="w"> </span><span class="ss">:visits</span><span class="p" data-group-id="7947271407-1">)</span><span class="w">
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">aggregate</span><span class="p" data-group-id="2266986187-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">:count</span><span class="p">,</span><span class="w"> </span><span class="ss">:visits</span><span class="p" data-group-id="2266986187-1">)</span><span class="w">
 
 </span><span class="c1"># Returns the number of visits per blog post in the &quot;private&quot; schema path</span><span class="w">
 </span><span class="c1"># (in Postgres) or database (in MySQL)</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">aggregate</span><span class="p" data-group-id="7947271407-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">:count</span><span class="p">,</span><span class="w"> </span><span class="ss">:visits</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;private&quot;</span><span class="p" data-group-id="7947271407-2">)</span><span class="w">
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">aggregate</span><span class="p" data-group-id="2266986187-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">:count</span><span class="p">,</span><span class="w"> </span><span class="ss">:visits</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;private&quot;</span><span class="p" data-group-id="2266986187-2">)</span><span class="w">
 
 </span><span class="c1"># Returns the average number of visits for the top 10</span><span class="w">
 </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">aggregate</span><span class="p" data-group-id="7947271407-3">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="ss">:avg</span><span class="p">,</span><span class="w"> </span><span class="ss">:visits</span><span class="p" data-group-id="7947271407-3">)</span></code></pre>
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">aggregate</span><span class="p" data-group-id="2266986187-3">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="ss">:avg</span><span class="p">,</span><span class="w"> </span><span class="ss">:visits</span><span class="p" data-group-id="2266986187-3">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:aggregate/4"><code class="inline">Ecto.Repo.aggregate/4</code></a>.</p>
   </section>
 </section>
@@ -384,7 +384,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">all(queryable, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -415,7 +415,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Fetch all post titles</span><span class="w">
 </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w">
      </span><span class="ss">select</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">title</span><span class="w">
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">all</span><span class="p" data-group-id="4563220315-1">(</span><span class="n">query</span><span class="p" data-group-id="4563220315-1">)</span></code></pre>
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">all</span><span class="p" data-group-id="0022517126-1">(</span><span class="n">query</span><span class="p" data-group-id="0022517126-1">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:all/2"><code class="inline">Ecto.Repo.all/2</code></a>.</p>
   </section>
 </section>
@@ -427,7 +427,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">checkout(fun, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -458,7 +458,7 @@ without checking out a new connection.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">child_spec(opts)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -473,7 +473,7 @@ without checking out a new connection.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">config()</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -493,7 +493,7 @@ it will be invoked with the first argument set to <code class="inline">:runtime<
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">delete(struct, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -530,11 +530,11 @@ the returning changeset. This option can be used to avoid raising
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="n">post</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="4818137043-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="4818137043-1">)</span><span class="w">
-</span><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">delete</span><span class="w"> </span><span class="n">post</span><span class="w"> </span><span class="k" data-group-id="4818137043-2">do</span><span class="w">
-  </span><span class="p" data-group-id="4818137043-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="4818137043-3">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Deleted with success</span><span class="w">
-  </span><span class="p" data-group-id="4818137043-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="4818137043-4">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
-</span><span class="k" data-group-id="4818137043-2">end</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="n">post</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="7553064401-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="7553064401-1">)</span><span class="w">
+</span><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">delete</span><span class="w"> </span><span class="n">post</span><span class="w"> </span><span class="k" data-group-id="7553064401-2">do</span><span class="w">
+  </span><span class="p" data-group-id="7553064401-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="7553064401-3">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Deleted with success</span><span class="w">
+  </span><span class="p" data-group-id="7553064401-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="7553064401-4">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
+</span><span class="k" data-group-id="7553064401-2">end</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:delete/2"><code class="inline">Ecto.Repo.delete/2</code></a>.</p>
   </section>
 </section>
@@ -546,7 +546,7 @@ the returning changeset. This option can be used to avoid raising
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">delete!(struct, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -564,7 +564,7 @@ the returning changeset. This option can be used to avoid raising
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">delete_all(queryable, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -593,9 +593,9 @@ remaining options.</p>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">delete_all</span><span class="p" data-group-id="9572320342-1">(</span><span class="nc">Post</span><span class="p" data-group-id="9572320342-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">delete_all</span><span class="p" data-group-id="5045231008-1">(</span><span class="nc">Post</span><span class="p" data-group-id="5045231008-1">)</span><span class="w">
 
-</span><span class="n">from</span><span class="p" data-group-id="9572320342-2">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="9572320342-2">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">delete_all</span></code></pre>
+</span><span class="n">from</span><span class="p" data-group-id="5045231008-2">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="5045231008-2">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">delete_all</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:delete_all/2"><code class="inline">Ecto.Repo.delete_all/2</code></a>.</p>
   </section>
 </section>
@@ -607,7 +607,7 @@ remaining options.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">exists?(queryable, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -636,15 +636,15 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="c1"># checks if any posts exist</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">exists?</span><span class="p" data-group-id="0413005417-1">(</span><span class="nc">Post</span><span class="p" data-group-id="0413005417-1">)</span><span class="w">
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">exists?</span><span class="p" data-group-id="8547300021-1">(</span><span class="nc">Post</span><span class="p" data-group-id="8547300021-1">)</span><span class="w">
 
 </span><span class="c1"># checks if any posts exist in the &quot;private&quot; schema path (in Postgres) or</span><span class="w">
 </span><span class="c1"># database (in MySQL)</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">exists?</span><span class="p" data-group-id="0413005417-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">schema</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;private&quot;</span><span class="p" data-group-id="0413005417-2">)</span><span class="w">
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">exists?</span><span class="p" data-group-id="8547300021-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">schema</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;private&quot;</span><span class="p" data-group-id="8547300021-2">)</span><span class="w">
 
 </span><span class="c1"># checks if any post with a like count greater than 10 exists</span><span class="w">
 </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">like_count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">exists?</span><span class="p" data-group-id="0413005417-3">(</span><span class="n">query</span><span class="p" data-group-id="0413005417-3">)</span></code></pre>
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">exists?</span><span class="p" data-group-id="8547300021-3">(</span><span class="n">query</span><span class="p" data-group-id="8547300021-3">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:exists?/2"><code class="inline">Ecto.Repo.exists?/2</code></a>.</p>
   </section>
 </section>
@@ -656,7 +656,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">get(queryable, id, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -686,9 +686,9 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="4551430230-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="4551430230-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="6655248193-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="6655248193-1">)</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="4551430230-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="4551430230-2">)</span></code></pre>
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="6655248193-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="6655248193-2">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:get/3"><code class="inline">Ecto.Repo.get/3</code></a>.</p>
   </section>
 </section>
@@ -700,7 +700,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">get!(queryable, id, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -727,9 +727,9 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="2555926212-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="2555926212-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="5179501634-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="5179501634-1">)</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="2555926212-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="2555926212-2">)</span></code></pre>
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="5179501634-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="5179501634-2">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:get!/3"><code class="inline">Ecto.Repo.get!/3</code></a>.</p>
   </section>
 </section>
@@ -741,7 +741,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">get_by(queryable, clauses, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -769,9 +769,9 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by</span><span class="p" data-group-id="2755306692-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="2755306692-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by</span><span class="p" data-group-id="0266595081-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="0266595081-1">)</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by</span><span class="p" data-group-id="2755306692-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2755306692-3">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="2755306692-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="2755306692-2">)</span></code></pre>
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by</span><span class="p" data-group-id="0266595081-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0266595081-3">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="0266595081-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="0266595081-2">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:get_by/3"><code class="inline">Ecto.Repo.get_by/3</code></a>.</p>
   </section>
 </section>
@@ -783,7 +783,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">get_by!(queryable, clauses, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -811,9 +811,9 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by!</span><span class="p" data-group-id="1786984867-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="1786984867-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by!</span><span class="p" data-group-id="3433581881-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="3433581881-1">)</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by!</span><span class="p" data-group-id="1786984867-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1786984867-3">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="1786984867-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="1786984867-2">)</span></code></pre>
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get_by!</span><span class="p" data-group-id="3433581881-2">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3433581881-3">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My post&quot;</span><span class="p" data-group-id="3433581881-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;public&quot;</span><span class="p" data-group-id="3433581881-2">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:get_by!/3"><code class="inline">Ecto.Repo.get_by!/3</code></a>.</p>
   </section>
 </section>
@@ -824,7 +824,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">get_dynamic_repo()</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -842,7 +842,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">in_transaction?()</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -864,9 +864,9 @@ to log all statements and consult those logs.</p>
 <pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">in_transaction?</span><span class="w">
 </span><span class="c1">#=&gt; false</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="9681462869-1">(</span><span class="k" data-group-id="9681462869-2">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="3209354025-1">(</span><span class="k" data-group-id="3209354025-2">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
   </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">in_transaction?</span><span class="w"> </span><span class="c1">#=&gt; true</span><span class="w">
-</span><span class="k" data-group-id="9681462869-2">end</span><span class="p" data-group-id="9681462869-1">)</span></code></pre>
+</span><span class="k" data-group-id="3209354025-2">end</span><span class="p" data-group-id="3209354025-1">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:in_transaction?/0"><code class="inline">Ecto.Repo.in_transaction?/0</code></a>.</p>
   </section>
 </section>
@@ -878,7 +878,7 @@ to log all statements and consult those logs.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert(struct, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -938,10 +938,10 @@ the returning changeset. This option can be used to avoid raising
 
 <p>A typical example is calling <code class="inline">MyRepo.insert/1</code> with a struct
 and acting on the return value:</p>
-<pre><code class="nohighlight makeup elixir"><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="w"> </span><span class="p" data-group-id="8382393830-1">%</span><span class="nc" data-group-id="8382393830-1">Post</span><span class="p" data-group-id="8382393830-1">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ecto is great&quot;</span><span class="p" data-group-id="8382393830-1">}</span><span class="w"> </span><span class="k" data-group-id="8382393830-2">do</span><span class="w">
-  </span><span class="p" data-group-id="8382393830-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="8382393830-3">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Inserted with success</span><span class="w">
-  </span><span class="p" data-group-id="8382393830-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="8382393830-4">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
-</span><span class="k" data-group-id="8382393830-2">end</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="w"> </span><span class="p" data-group-id="9231549217-1">%</span><span class="nc" data-group-id="9231549217-1">Post</span><span class="p" data-group-id="9231549217-1">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Ecto is great&quot;</span><span class="p" data-group-id="9231549217-1">}</span><span class="w"> </span><span class="k" data-group-id="9231549217-2">do</span><span class="w">
+  </span><span class="p" data-group-id="9231549217-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="9231549217-3">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Inserted with success</span><span class="w">
+  </span><span class="p" data-group-id="9231549217-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="9231549217-4">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
+</span><span class="k" data-group-id="9231549217-2">end</span></code></pre>
 <h2 id="insert/2-upserts" class="section-heading">
   <a href="#insert/2-upserts" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Upserts
@@ -976,9 +976,9 @@ will be raised.
 on databases such as MySQL.</p>
 <p>As an example, imagine <code class="inline">:title</code> is marked as a unique column in
 the database:</p>
-<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="4487196916-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">inserted</span><span class="p" data-group-id="4487196916-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="4487196916-2">(</span><span class="p" data-group-id="4487196916-3">%</span><span class="nc" data-group-id="4487196916-3">Post</span><span class="p" data-group-id="4487196916-3">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="4487196916-3">}</span><span class="p" data-group-id="4487196916-2">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="6284605365-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">inserted</span><span class="p" data-group-id="6284605365-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="6284605365-2">(</span><span class="p" data-group-id="6284605365-3">%</span><span class="nc" data-group-id="6284605365-3">Post</span><span class="p" data-group-id="6284605365-3">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="6284605365-3">}</span><span class="p" data-group-id="6284605365-2">)</span></code></pre>
 <p>Now we can insert with the same title but do nothing on conflicts:</p>
-<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="4973210535-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">ignored</span><span class="p" data-group-id="4973210535-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="4973210535-2">(</span><span class="p" data-group-id="4973210535-3">%</span><span class="nc" data-group-id="4973210535-3">Post</span><span class="p" data-group-id="4973210535-3">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="4973210535-3">}</span><span class="p">,</span><span class="w"> </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="ss">:nothing</span><span class="p" data-group-id="4973210535-2">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="2426512688-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">ignored</span><span class="p" data-group-id="2426512688-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="2426512688-2">(</span><span class="p" data-group-id="2426512688-3">%</span><span class="nc" data-group-id="2426512688-3">Post</span><span class="p" data-group-id="2426512688-3">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="2426512688-3">}</span><span class="p">,</span><span class="w"> </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="ss">:nothing</span><span class="p" data-group-id="2426512688-2">)</span><span class="w">
 </span><span class="n">assert</span><span class="w"> </span><span class="n">ignored</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="no">nil</span></code></pre>
 <p>Because we used <code class="inline">on_conflict: :nothing</code>, instead of getting an error,
 we got <code class="inline">{:ok, struct}</code>. However the returned struct does not reflect
@@ -991,14 +991,14 @@ is slightly more complex, as the database does not actually inform us
 if an insert or update happened. Let&#39;s insert a post with the same title
 but use a query to update the body column in case of conflicts:</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># In Postgres (it requires the conflict target for updates):</span><span class="w">
-</span><span class="n">on_conflict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="8277827387-1">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8277827387-2">[</span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;updated&quot;</span><span class="p" data-group-id="8277827387-2">]</span><span class="p" data-group-id="8277827387-1">]</span><span class="w">
-</span><span class="p" data-group-id="8277827387-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="p" data-group-id="8277827387-3">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="8277827387-4">(</span><span class="p" data-group-id="8277827387-5">%</span><span class="nc" data-group-id="8277827387-5">Post</span><span class="p" data-group-id="8277827387-5">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="8277827387-5">}</span><span class="p">,</span><span class="w">
-                               </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p">,</span><span class="w"> </span><span class="ss">conflict_target</span><span class="p">:</span><span class="w"> </span><span class="ss">:title</span><span class="p" data-group-id="8277827387-4">)</span><span class="w">
+</span><span class="n">on_conflict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="4821275360-1">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4821275360-2">[</span><span class="ss">body</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;updated&quot;</span><span class="p" data-group-id="4821275360-2">]</span><span class="p" data-group-id="4821275360-1">]</span><span class="w">
+</span><span class="p" data-group-id="4821275360-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="p" data-group-id="4821275360-3">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="4821275360-4">(</span><span class="p" data-group-id="4821275360-5">%</span><span class="nc" data-group-id="4821275360-5">Post</span><span class="p" data-group-id="4821275360-5">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="4821275360-5">}</span><span class="p">,</span><span class="w">
+                               </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p">,</span><span class="w"> </span><span class="ss">conflict_target</span><span class="p">:</span><span class="w"> </span><span class="ss">:title</span><span class="p" data-group-id="4821275360-4">)</span><span class="w">
 
 </span><span class="c1"># In MySQL (conflict target is not supported):</span><span class="w">
-</span><span class="n">on_conflict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="8277827387-6">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8277827387-7">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;updated&quot;</span><span class="p" data-group-id="8277827387-7">]</span><span class="p" data-group-id="8277827387-6">]</span><span class="w">
-</span><span class="p" data-group-id="8277827387-8">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="p" data-group-id="8277827387-8">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="8277827387-9">(</span><span class="p" data-group-id="8277827387-10">%</span><span class="nc" data-group-id="8277827387-10">Post</span><span class="p" data-group-id="8277827387-10">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="n">inserted</span><span class="o">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;updated&quot;</span><span class="p" data-group-id="8277827387-10">}</span><span class="p">,</span><span class="w">
-                               </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p" data-group-id="8277827387-9">)</span></code></pre>
+</span><span class="n">on_conflict</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="4821275360-6">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4821275360-7">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;updated&quot;</span><span class="p" data-group-id="4821275360-7">]</span><span class="p" data-group-id="4821275360-6">]</span><span class="w">
+</span><span class="p" data-group-id="4821275360-8">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="p" data-group-id="4821275360-8">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="4821275360-9">(</span><span class="p" data-group-id="4821275360-10">%</span><span class="nc" data-group-id="4821275360-10">Post</span><span class="p" data-group-id="4821275360-10">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="n">inserted</span><span class="o">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;updated&quot;</span><span class="p" data-group-id="4821275360-10">}</span><span class="p">,</span><span class="w">
+                               </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p" data-group-id="4821275360-9">)</span></code></pre>
 <p>In the examples above, even though it returned <code class="inline">:ok</code>, we do not know
 if we inserted new data or if we updated only the <code class="inline">:on_conflict</code> fields.
 In case an update happened, the data in the struct most likely does
@@ -1011,20 +1011,20 @@ database, you have three options:</p>
 <li><p>Use <code class="inline">on_conflict: :replace_all</code>, although that will replace all
 fields in the database with the ones in the struct/changeset,
 including autogenerated fields such as <code class="inline">insert_at</code> and <code class="inline">updated_at</code>:</p>
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="9221352594-1">(</span><span class="p" data-group-id="9221352594-2">%</span><span class="nc" data-group-id="9221352594-2">Post</span><span class="p" data-group-id="9221352594-2">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="9221352594-2">}</span><span class="p">,</span><span class="w">
-              </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="ss">:replace_all</span><span class="p">,</span><span class="w"> </span><span class="ss">conflict_target</span><span class="p">:</span><span class="w"> </span><span class="ss">:title</span><span class="p" data-group-id="9221352594-1">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="7266991572-1">(</span><span class="p" data-group-id="7266991572-2">%</span><span class="nc" data-group-id="7266991572-2">Post</span><span class="p" data-group-id="7266991572-2">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="7266991572-2">}</span><span class="p">,</span><span class="w">
+              </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="ss">:replace_all</span><span class="p">,</span><span class="w"> </span><span class="ss">conflict_target</span><span class="p">:</span><span class="w"> </span><span class="ss">:title</span><span class="p" data-group-id="7266991572-1">)</span></code></pre>
 </li>
 <li><p>Specify <code class="inline">read_after_writes: true</code> in your schema for choosing
 fields that are read from the database after every operation.
 Or pass <code class="inline">returning: true</code> to <code class="inline">insert</code> to read all fields back:</p>
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="7728605913-1">(</span><span class="p" data-group-id="7728605913-2">%</span><span class="nc" data-group-id="7728605913-2">Post</span><span class="p" data-group-id="7728605913-2">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="7728605913-2">}</span><span class="p">,</span><span class="w"> </span><span class="ss">returning</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
-              </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p">,</span><span class="w"> </span><span class="ss">conflict_target</span><span class="p">:</span><span class="w"> </span><span class="ss">:title</span><span class="p" data-group-id="7728605913-1">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="0710658740-1">(</span><span class="p" data-group-id="0710658740-2">%</span><span class="nc" data-group-id="0710658740-2">Post</span><span class="p" data-group-id="0710658740-2">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="0710658740-2">}</span><span class="p">,</span><span class="w"> </span><span class="ss">returning</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
+              </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p">,</span><span class="w"> </span><span class="ss">conflict_target</span><span class="p">:</span><span class="w"> </span><span class="ss">:title</span><span class="p" data-group-id="0710658740-1">)</span></code></pre>
 </li>
 <li><p>Alternatively, read the data again from the database in a separate
 query. This option requires the primary key to be generated by the
 database:</p>
-<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="7974550395-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="p" data-group-id="7974550395-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="7974550395-2">(</span><span class="p" data-group-id="7974550395-3">%</span><span class="nc" data-group-id="7974550395-3">Post</span><span class="p" data-group-id="7974550395-3">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="7974550395-3">}</span><span class="p">,</span><span class="w"> </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p" data-group-id="7974550395-2">)</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="7974550395-4">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="o">.</span><span class="n">id</span><span class="p" data-group-id="7974550395-4">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="p" data-group-id="4795243573-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="p" data-group-id="4795243573-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="4795243573-2">(</span><span class="p" data-group-id="4795243573-3">%</span><span class="nc" data-group-id="4795243573-3">Post</span><span class="p" data-group-id="4795243573-3">{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;this is unique&quot;</span><span class="p" data-group-id="4795243573-3">}</span><span class="p">,</span><span class="w"> </span><span class="ss">on_conflict</span><span class="p">:</span><span class="w"> </span><span class="n">on_conflict</span><span class="p" data-group-id="4795243573-2">)</span><span class="w">
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="4795243573-4">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="n">updated</span><span class="o">.</span><span class="n">id</span><span class="p" data-group-id="4795243573-4">)</span></code></pre>
 </li>
 </ul>
 <p>Because of the inability to know if the struct is up to date or not,
@@ -1042,7 +1042,7 @@ track the proper status of the association.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert!(struct, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1060,7 +1060,7 @@ track the proper status of the association.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert_all(schema_or_source, entries, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1129,9 +1129,9 @@ remaining options.</p>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert_all</span><span class="p" data-group-id="1090505788-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1090505788-2">[</span><span class="p" data-group-id="1090505788-3">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My first post&quot;</span><span class="p" data-group-id="1090505788-3">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1090505788-4">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My second post&quot;</span><span class="p" data-group-id="1090505788-4">]</span><span class="p" data-group-id="1090505788-2">]</span><span class="p" data-group-id="1090505788-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert_all</span><span class="p" data-group-id="1074978718-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1074978718-2">[</span><span class="p" data-group-id="1074978718-3">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My first post&quot;</span><span class="p" data-group-id="1074978718-3">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1074978718-4">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My second post&quot;</span><span class="p" data-group-id="1074978718-4">]</span><span class="p" data-group-id="1074978718-2">]</span><span class="p" data-group-id="1074978718-1">)</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert_all</span><span class="p" data-group-id="1090505788-5">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1090505788-6">[</span><span class="p" data-group-id="1090505788-7">%{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My first post&quot;</span><span class="p" data-group-id="1090505788-7">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1090505788-8">%{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My second post&quot;</span><span class="p" data-group-id="1090505788-8">}</span><span class="p" data-group-id="1090505788-6">]</span><span class="p" data-group-id="1090505788-5">)</span></code></pre>
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert_all</span><span class="p" data-group-id="1074978718-5">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1074978718-6">[</span><span class="p" data-group-id="1074978718-7">%{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My first post&quot;</span><span class="p" data-group-id="1074978718-7">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1074978718-8">%{</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My second post&quot;</span><span class="p" data-group-id="1074978718-8">}</span><span class="p" data-group-id="1074978718-6">]</span><span class="p" data-group-id="1074978718-5">)</span></code></pre>
 <h2 id="insert_all/3-upserts" class="section-heading">
   <a href="#insert_all/3-upserts" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Upserts
@@ -1189,7 +1189,7 @@ by the UPDATE query.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert_or_update(changeset, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1202,7 +1202,7 @@ or not.</p>
 Ecto when loading or building a schema.</p>
 <p>Please note that for this to work, you will have to load existing structs from
 the database. So even if the struct exists, this won&#39;t work:</p>
-<pre><code class="nohighlight makeup elixir"><span class="n">struct</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="5045904354-1">%</span><span class="nc" data-group-id="5045904354-1">Post</span><span class="p" data-group-id="5045904354-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;existing_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="5045904354-1">}</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="n">struct</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="7133254700-1">%</span><span class="nc" data-group-id="7133254700-1">Post</span><span class="p" data-group-id="7133254700-1">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;existing_id&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7133254700-1">}</span><span class="w">
 </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert_or_update</span><span class="w"> </span><span class="n">changeset</span><span class="w">
 </span><span class="c1"># =&gt; {:error, changeset} # id already exists</span></code></pre>
 <h2 id="insert_or_update/2-options" class="section-heading">
@@ -1233,17 +1233,17 @@ Only applies to updates.
 </h2>
 
 <pre><code class="nohighlight makeup elixir"><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w">
-  </span><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="8123692711-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="p" data-group-id="8123692711-1">)</span><span class="w"> </span><span class="k" data-group-id="8123692711-2">do</span><span class="w">
-    </span><span class="no">nil</span><span class="w">  </span><span class="o">-&gt;</span><span class="w"> </span><span class="p" data-group-id="8123692711-3">%</span><span class="nc" data-group-id="8123692711-3">Post</span><span class="p" data-group-id="8123692711-3">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="n">id</span><span class="p" data-group-id="8123692711-3">}</span><span class="w"> </span><span class="c1"># Post not found, we build one</span><span class="w">
+  </span><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="1207685147-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="p" data-group-id="1207685147-1">)</span><span class="w"> </span><span class="k" data-group-id="1207685147-2">do</span><span class="w">
+    </span><span class="no">nil</span><span class="w">  </span><span class="o">-&gt;</span><span class="w"> </span><span class="p" data-group-id="1207685147-3">%</span><span class="nc" data-group-id="1207685147-3">Post</span><span class="p" data-group-id="1207685147-3">{</span><span class="ss">id</span><span class="p">:</span><span class="w"> </span><span class="n">id</span><span class="p" data-group-id="1207685147-3">}</span><span class="w"> </span><span class="c1"># Post not found, we build one</span><span class="w">
     </span><span class="n">post</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">post</span><span class="w">          </span><span class="c1"># Post exists, let&#39;s use it</span><span class="w">
-  </span><span class="k" data-group-id="8123692711-2">end</span><span class="w">
-  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Post</span><span class="o">.</span><span class="n">changeset</span><span class="p" data-group-id="8123692711-4">(</span><span class="n">changes</span><span class="p" data-group-id="8123692711-4">)</span><span class="w">
+  </span><span class="k" data-group-id="1207685147-2">end</span><span class="w">
+  </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Post</span><span class="o">.</span><span class="n">changeset</span><span class="p" data-group-id="1207685147-4">(</span><span class="n">changes</span><span class="p" data-group-id="1207685147-4">)</span><span class="w">
   </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert_or_update</span><span class="w">
 
-</span><span class="k">case</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="k" data-group-id="8123692711-5">do</span><span class="w">
-  </span><span class="p" data-group-id="8123692711-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="8123692711-6">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Inserted or updated with success</span><span class="w">
-  </span><span class="p" data-group-id="8123692711-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="8123692711-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
-</span><span class="k" data-group-id="8123692711-5">end</span></code></pre>
+</span><span class="k">case</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="k" data-group-id="1207685147-5">do</span><span class="w">
+  </span><span class="p" data-group-id="1207685147-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="1207685147-6">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Inserted or updated with success</span><span class="w">
+  </span><span class="p" data-group-id="1207685147-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="1207685147-7">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
+</span><span class="k" data-group-id="1207685147-5">end</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:insert_or_update/2"><code class="inline">Ecto.Repo.insert_or_update/2</code></a>.</p>
   </section>
 </section>
@@ -1255,7 +1255,7 @@ Only applies to updates.
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">insert_or_update!(changeset, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1273,7 +1273,7 @@ is invalid.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">load(schema_or_types, data)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1293,22 +1293,22 @@ If any of the values has invalid type, an error is raised.</p>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="0456734025-1">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0456734025-2">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="0456734025-2">}</span><span class="p" data-group-id="0456734025-1">)</span><span class="w">
-</span><span class="p" data-group-id="0456734025-3">%</span><span class="nc" data-group-id="0456734025-3">User</span><span class="p" data-group-id="0456734025-3">{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="0456734025-3">}</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="5641024879-1">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5641024879-2">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="5641024879-2">}</span><span class="p" data-group-id="5641024879-1">)</span><span class="w">
+</span><span class="p" data-group-id="5641024879-3">%</span><span class="nc" data-group-id="5641024879-3">User</span><span class="p" data-group-id="5641024879-3">{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="5641024879-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="0456734025-4">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0456734025-5">[</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="0456734025-5">]</span><span class="p" data-group-id="0456734025-4">)</span><span class="w">
-</span><span class="p" data-group-id="0456734025-6">%</span><span class="nc" data-group-id="0456734025-6">User</span><span class="p" data-group-id="0456734025-6">{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="0456734025-6">}</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="5641024879-4">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5641024879-5">[</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="5641024879-5">]</span><span class="p" data-group-id="5641024879-4">)</span><span class="w">
+</span><span class="p" data-group-id="5641024879-6">%</span><span class="nc" data-group-id="5641024879-6">User</span><span class="p" data-group-id="5641024879-6">{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="5641024879-6">}</span></code></pre>
 <p><code class="inline">data</code> can also take form of <code class="inline">{fields, values}</code>:</p>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="7207243646-1">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7207243646-2">{</span><span class="p" data-group-id="7207243646-3">[</span><span class="ss">:name</span><span class="p">,</span><span class="w"> </span><span class="ss">:age</span><span class="p" data-group-id="7207243646-3">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7207243646-4">[</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="7207243646-4">]</span><span class="p" data-group-id="7207243646-2">}</span><span class="p" data-group-id="7207243646-1">)</span><span class="w">
-</span><span class="p" data-group-id="7207243646-5">%</span><span class="nc" data-group-id="7207243646-5">User</span><span class="p" data-group-id="7207243646-5">{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7207243646-5">}</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="3281038258-1">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3281038258-2">{</span><span class="p" data-group-id="3281038258-3">[</span><span class="ss">:name</span><span class="p">,</span><span class="w"> </span><span class="ss">:age</span><span class="p" data-group-id="3281038258-3">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3281038258-4">[</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="3281038258-4">]</span><span class="p" data-group-id="3281038258-2">}</span><span class="p" data-group-id="3281038258-1">)</span><span class="w">
+</span><span class="p" data-group-id="3281038258-5">%</span><span class="nc" data-group-id="3281038258-5">User</span><span class="p" data-group-id="3281038258-5">{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3281038258-5">}</span></code></pre>
 <p>The first argument can also be a <code class="inline">types</code> map:</p>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">types</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="3044086881-1">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="ss">:string</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="3044086881-1">}</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="3044086881-2">(</span><span class="n">types</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3044086881-3">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="3044086881-3">}</span><span class="p" data-group-id="3044086881-2">)</span><span class="w">
-</span><span class="p" data-group-id="3044086881-4">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="3044086881-4">}</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">types</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="5211437428-1">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="ss">:string</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="ss">:integer</span><span class="p" data-group-id="5211437428-1">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="5211437428-2">(</span><span class="n">types</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5211437428-3">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="5211437428-3">}</span><span class="p" data-group-id="5211437428-2">)</span><span class="w">
+</span><span class="p" data-group-id="5211437428-4">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Alice&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">age</span><span class="p">:</span><span class="w"> </span><span class="mi">25</span><span class="p" data-group-id="5211437428-4">}</span></code></pre>
 <p>This function is especially useful when parsing raw query results:</p>
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Ecto.Adapters.SQL</span><span class="o">.</span><span class="n">query!</span><span class="p" data-group-id="5440466441-1">(</span><span class="nc">MyRepo</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;SELECT * FROM users&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5440466441-2">[</span><span class="p" data-group-id="5440466441-2">]</span><span class="p" data-group-id="5440466441-1">)</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="5440466441-3">(</span><span class="n">result</span><span class="o">.</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="5440466441-4">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5440466441-5">{</span><span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="5440466441-5">}</span><span class="p" data-group-id="5440466441-4">)</span><span class="p" data-group-id="5440466441-3">)</span><span class="w">
-</span><span class="p" data-group-id="5440466441-6">[</span><span class="p" data-group-id="5440466441-7">%</span><span class="nc" data-group-id="5440466441-7">User</span><span class="p" data-group-id="5440466441-7">{</span><span class="n">...</span><span class="p" data-group-id="5440466441-7">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="5440466441-6">]</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Ecto.Adapters.SQL</span><span class="o">.</span><span class="n">query!</span><span class="p" data-group-id="4934715857-1">(</span><span class="nc">MyRepo</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;SELECT * FROM users&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4934715857-2">[</span><span class="p" data-group-id="4934715857-2">]</span><span class="p" data-group-id="4934715857-1">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="4934715857-3">(</span><span class="n">result</span><span class="o">.</span><span class="n">rows</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">load</span><span class="p" data-group-id="4934715857-4">(</span><span class="nc">User</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4934715857-5">{</span><span class="n">result</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="4934715857-5">}</span><span class="p" data-group-id="4934715857-4">)</span><span class="p" data-group-id="4934715857-3">)</span><span class="w">
+</span><span class="p" data-group-id="4934715857-6">[</span><span class="p" data-group-id="4934715857-7">%</span><span class="nc" data-group-id="4934715857-7">User</span><span class="p" data-group-id="4934715857-7">{</span><span class="n">...</span><span class="p" data-group-id="4934715857-7">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="4934715857-6">]</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:load/2"><code class="inline">Ecto.Repo.load/2</code></a>.</p>
   </section>
 </section>
@@ -1320,7 +1320,7 @@ If any of the values has invalid type, an error is raised.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">one(queryable, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1348,12 +1348,12 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">Repo</span><span class="o">.</span><span class="n">one</span><span class="p" data-group-id="1609693364-1">(</span><span class="nc">Post</span><span class="p" data-group-id="1609693364-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">Repo</span><span class="o">.</span><span class="n">one</span><span class="p" data-group-id="8102619005-1">(</span><span class="nc">Post</span><span class="p" data-group-id="8102619005-1">)</span><span class="w">
 
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">one</span><span class="p" data-group-id="1609693364-2">(</span><span class="n">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">like_count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="1609693364-2">)</span><span class="w">
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">one</span><span class="p" data-group-id="8102619005-2">(</span><span class="n">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">like_count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="8102619005-2">)</span><span class="w">
 
 </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">like_count</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="nc">Repo</span><span class="o">.</span><span class="n">one</span><span class="p" data-group-id="1609693364-3">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;private&quot;</span><span class="p" data-group-id="1609693364-3">)</span></code></pre>
+</span><span class="nc">Repo</span><span class="o">.</span><span class="n">one</span><span class="p" data-group-id="8102619005-3">(</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="ss">prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;private&quot;</span><span class="p" data-group-id="8102619005-3">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:one/2"><code class="inline">Ecto.Repo.one/2</code></a>.</p>
   </section>
 </section>
@@ -1365,7 +1365,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">one!(queryable, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1399,7 +1399,7 @@ in the schema. For more information see the &quot;Query Prefix&quot; section of 
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">preload(struct_or_structs_or_nil, preloads, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1440,17 +1440,17 @@ option allows the prefix to be changed.
 </span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="ss">:comments</span><span class="w">
 
 </span><span class="c1"># Use a list of atoms to preload multiple associations</span><span class="w">
-</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0346494327-1">[</span><span class="ss">:comments</span><span class="p">,</span><span class="w"> </span><span class="ss">:authors</span><span class="p" data-group-id="0346494327-1">]</span><span class="w">
+</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9928487975-1">[</span><span class="ss">:comments</span><span class="p">,</span><span class="w"> </span><span class="ss">:authors</span><span class="p" data-group-id="9928487975-1">]</span><span class="w">
 
 </span><span class="c1"># Use a keyword list to preload nested associations as well</span><span class="w">
-</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0346494327-2">[</span><span class="ss">comments</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0346494327-3">[</span><span class="ss">:replies</span><span class="p">,</span><span class="w"> </span><span class="ss">:likes</span><span class="p" data-group-id="0346494327-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">authors</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0346494327-4">[</span><span class="p" data-group-id="0346494327-4">]</span><span class="p" data-group-id="0346494327-2">]</span><span class="w">
+</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9928487975-2">[</span><span class="ss">comments</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9928487975-3">[</span><span class="ss">:replies</span><span class="p">,</span><span class="w"> </span><span class="ss">:likes</span><span class="p" data-group-id="9928487975-3">]</span><span class="p">,</span><span class="w"> </span><span class="ss">authors</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9928487975-4">[</span><span class="p" data-group-id="9928487975-4">]</span><span class="p" data-group-id="9928487975-2">]</span><span class="w">
 
 </span><span class="c1"># Use a keyword list to customize how associations are queried</span><span class="w">
-</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0346494327-5">[</span><span class="ss">comments</span><span class="p">:</span><span class="w"> </span><span class="n">from</span><span class="p" data-group-id="0346494327-6">(</span><span class="n">c</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Comment</span><span class="p">,</span><span class="w"> </span><span class="ss">order_by</span><span class="p">:</span><span class="w"> </span><span class="n">c</span><span class="o">.</span><span class="n">published_at</span><span class="p" data-group-id="0346494327-6">)</span><span class="p" data-group-id="0346494327-5">]</span><span class="w">
+</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9928487975-5">[</span><span class="ss">comments</span><span class="p">:</span><span class="w"> </span><span class="n">from</span><span class="p" data-group-id="9928487975-6">(</span><span class="n">c</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Comment</span><span class="p">,</span><span class="w"> </span><span class="ss">order_by</span><span class="p">:</span><span class="w"> </span><span class="n">c</span><span class="o">.</span><span class="n">published_at</span><span class="p" data-group-id="9928487975-6">)</span><span class="p" data-group-id="9928487975-5">]</span><span class="w">
 
 </span><span class="c1"># Use a two-element tuple for a custom query and nested association definition</span><span class="w">
 </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Comment</span><span class="p">,</span><span class="w"> </span><span class="ss">order_by</span><span class="p">:</span><span class="w"> </span><span class="n">c</span><span class="o">.</span><span class="n">published_at</span><span class="w">
-</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0346494327-7">[</span><span class="ss">comments</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0346494327-8">{</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0346494327-9">[</span><span class="ss">:replies</span><span class="p">,</span><span class="w"> </span><span class="ss">:likes</span><span class="p" data-group-id="0346494327-9">]</span><span class="p" data-group-id="0346494327-8">}</span><span class="p" data-group-id="0346494327-7">]</span></code></pre>
+</span><span class="n">posts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Repo</span><span class="o">.</span><span class="n">preload</span><span class="w"> </span><span class="n">posts</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9928487975-7">[</span><span class="ss">comments</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9928487975-8">{</span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9928487975-9">[</span><span class="ss">:replies</span><span class="p">,</span><span class="w"> </span><span class="ss">:likes</span><span class="p" data-group-id="9928487975-9">]</span><span class="p" data-group-id="9928487975-8">}</span><span class="p" data-group-id="9928487975-7">]</span></code></pre>
 <p>The query given to preload may also preload its own associations.</p>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:preload/3"><code class="inline">Ecto.Repo.preload/3</code></a>.</p>
   </section>
@@ -1462,7 +1462,7 @@ option allows the prefix to be changed.
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">prepare_query(operation, query, opts)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1484,7 +1484,7 @@ schema functions.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">put_dynamic_repo(dynamic)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1496,17 +1496,17 @@ many different database instances. By default, when you call
 <code class="inline">MyApp.Repo.start_link/1</code>, it will start a repository with
 name <code class="inline">MyApp.Repo</code>. But if you want to start multiple repositories,
 you can give each of them a different name:</p>
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="2763096495-1">(</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="ss">:tenant_foo</span><span class="p">,</span><span class="w"> </span><span class="ss">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;foo.example.com&quot;</span><span class="p" data-group-id="2763096495-1">)</span><span class="w">
-</span><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="2763096495-2">(</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="ss">:tenant_bar</span><span class="p">,</span><span class="w"> </span><span class="ss">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bar.example.com&quot;</span><span class="p" data-group-id="2763096495-2">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="1148814606-1">(</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="ss">:tenant_foo</span><span class="p">,</span><span class="w"> </span><span class="ss">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;foo.example.com&quot;</span><span class="p" data-group-id="1148814606-1">)</span><span class="w">
+</span><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="1148814606-2">(</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="ss">:tenant_bar</span><span class="p">,</span><span class="w"> </span><span class="ss">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bar.example.com&quot;</span><span class="p" data-group-id="1148814606-2">)</span></code></pre>
 <p>You can also start repositories without names by explicitly
 setting the name to nil:</p>
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="2401704973-1">(</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;temp.example.com&quot;</span><span class="p" data-group-id="2401704973-1">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">start_link</span><span class="p" data-group-id="7386602681-1">(</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;temp.example.com&quot;</span><span class="p" data-group-id="7386602681-1">)</span></code></pre>
 <p>However, once the repository is started, you can&#39;t directly interact with
 it, since all operations in <code class="inline">MyApp.Repo</code> are sent by default to the repository
 named <code class="inline">MyApp.Repo</code>. You can change the default repo at compile time with:</p>
 <pre><code class="nohighlight makeup elixir"><span class="kn">use</span><span class="w"> </span><span class="nc">Ecto.Repo</span><span class="p">,</span><span class="w"> </span><span class="ss">default_dynamic_repo</span><span class="p">:</span><span class="w"> </span><span class="ss">:name_of_repo</span></code></pre>
 <p>Or you can change it anytime at runtime by calling <a href="#put_dynamic_repo/1"><code class="inline">put_dynamic_repo/1</code></a>:</p>
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">put_dynamic_repo</span><span class="p" data-group-id="4665072871-1">(</span><span class="ss">:tenant_foo</span><span class="p" data-group-id="4665072871-1">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyApp.Repo</span><span class="o">.</span><span class="n">put_dynamic_repo</span><span class="p" data-group-id="0847687310-1">(</span><span class="ss">:tenant_foo</span><span class="p" data-group-id="0847687310-1">)</span></code></pre>
 <p>From this moment on, all future queries done by the current process will
 run on <code class="inline">:tenant_foo</code>.</p>
 <p><strong>Note this feature is experimental and may be changed or removed in future
@@ -1523,7 +1523,7 @@ releases.</strong></p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">query(sql, params \\ [], opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L1" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L1" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1542,7 +1542,7 @@ releases.</strong></p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">query!(sql, params \\ [], opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L1" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L1" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1559,7 +1559,7 @@ releases.</strong></p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">rollback(value)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1581,7 +1581,7 @@ releases.</strong></p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">start_link(opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1609,7 +1609,7 @@ for adapter-specific configuration see the adapter&#39;s documentation.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">stop(timeout \\ 5000)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1627,7 +1627,7 @@ for adapter-specific configuration see the adapter&#39;s documentation.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">stream(queryable, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1664,10 +1664,10 @@ It is supported at least by Postgres and MySQL and defaults to 500.</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1"># Fetch all post titles</span><span class="w">
 </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w">
      </span><span class="ss">select</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">title</span><span class="w">
-</span><span class="n">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">stream</span><span class="p" data-group-id="3020023436-1">(</span><span class="n">query</span><span class="p" data-group-id="3020023436-1">)</span><span class="w">
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="3020023436-2">(</span><span class="k" data-group-id="3020023436-3">fn</span><span class="p" data-group-id="3020023436-4">(</span><span class="p" data-group-id="3020023436-4">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
-  </span><span class="nc">Enum</span><span class="o">.</span><span class="n">to_list</span><span class="p" data-group-id="3020023436-5">(</span><span class="n">stream</span><span class="p" data-group-id="3020023436-5">)</span><span class="w">
-</span><span class="k" data-group-id="3020023436-3">end</span><span class="p" data-group-id="3020023436-2">)</span></code></pre>
+</span><span class="n">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">stream</span><span class="p" data-group-id="5317399332-1">(</span><span class="n">query</span><span class="p" data-group-id="5317399332-1">)</span><span class="w">
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="5317399332-2">(</span><span class="k" data-group-id="5317399332-3">fn</span><span class="p" data-group-id="5317399332-4">(</span><span class="p" data-group-id="5317399332-4">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+  </span><span class="nc">Enum</span><span class="o">.</span><span class="n">to_list</span><span class="p" data-group-id="5317399332-5">(</span><span class="n">stream</span><span class="p" data-group-id="5317399332-5">)</span><span class="w">
+</span><span class="k" data-group-id="5317399332-3">end</span><span class="p" data-group-id="5317399332-2">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:stream/2"><code class="inline">Ecto.Repo.stream/2</code></a>.</p>
   </section>
 </section>
@@ -1678,7 +1678,7 @@ It is supported at least by Postgres and MySQL and defaults to 500.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">to_sql(operation, queryable)</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L1" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L1" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1696,7 +1696,7 @@ It is supported at least by Postgres and MySQL and defaults to 500.</p>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">transaction(fun_or_multi, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1749,29 +1749,29 @@ see some examples in the <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Multi.html"
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="kn">import</span><span class="w"> </span><span class="nc">Ecto.Changeset</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1614573796-1">[</span><span class="ss">change</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p" data-group-id="1614573796-1">]</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="kn">import</span><span class="w"> </span><span class="nc">Ecto.Changeset</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2724413793-1">[</span><span class="ss">change</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p" data-group-id="2724413793-1">]</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="1614573796-2">(</span><span class="k" data-group-id="1614573796-3">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
-  </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update!</span><span class="p" data-group-id="1614573796-4">(</span><span class="n">change</span><span class="p" data-group-id="1614573796-5">(</span><span class="n">alice</span><span class="p">,</span><span class="w"> </span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="n">alice</span><span class="o">.</span><span class="n">balance</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="1614573796-5">)</span><span class="p" data-group-id="1614573796-4">)</span><span class="w">
-  </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update!</span><span class="p" data-group-id="1614573796-6">(</span><span class="n">change</span><span class="p" data-group-id="1614573796-7">(</span><span class="n">bob</span><span class="p">,</span><span class="w"> </span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="n">bob</span><span class="o">.</span><span class="n">balance</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="1614573796-7">)</span><span class="p" data-group-id="1614573796-6">)</span><span class="w">
-</span><span class="k" data-group-id="1614573796-3">end</span><span class="p" data-group-id="1614573796-2">)</span><span class="w">
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="2724413793-2">(</span><span class="k" data-group-id="2724413793-3">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+  </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update!</span><span class="p" data-group-id="2724413793-4">(</span><span class="n">change</span><span class="p" data-group-id="2724413793-5">(</span><span class="n">alice</span><span class="p">,</span><span class="w"> </span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="n">alice</span><span class="o">.</span><span class="n">balance</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="2724413793-5">)</span><span class="p" data-group-id="2724413793-4">)</span><span class="w">
+  </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update!</span><span class="p" data-group-id="2724413793-6">(</span><span class="n">change</span><span class="p" data-group-id="2724413793-7">(</span><span class="n">bob</span><span class="p">,</span><span class="w"> </span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="n">bob</span><span class="o">.</span><span class="n">balance</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p" data-group-id="2724413793-7">)</span><span class="p" data-group-id="2724413793-6">)</span><span class="w">
+</span><span class="k" data-group-id="2724413793-3">end</span><span class="p" data-group-id="2724413793-2">)</span><span class="w">
 
 </span><span class="c1"># When passing a function of arity 1, it receives the repository itself</span><span class="w">
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="1614573796-8">(</span><span class="k" data-group-id="1614573796-9">fn</span><span class="w"> </span><span class="n">repo</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> 
-  </span><span class="n">repo</span><span class="o">.</span><span class="n">insert!</span><span class="p" data-group-id="1614573796-10">(</span><span class="p" data-group-id="1614573796-11">%</span><span class="nc" data-group-id="1614573796-11">Post</span><span class="p" data-group-id="1614573796-11">{</span><span class="p" data-group-id="1614573796-11">}</span><span class="p" data-group-id="1614573796-10">)</span><span class="w">
-</span><span class="k" data-group-id="1614573796-9">end</span><span class="p" data-group-id="1614573796-8">)</span><span class="w">
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="2724413793-8">(</span><span class="k" data-group-id="2724413793-9">fn</span><span class="w"> </span><span class="n">repo</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> 
+  </span><span class="n">repo</span><span class="o">.</span><span class="n">insert!</span><span class="p" data-group-id="2724413793-10">(</span><span class="p" data-group-id="2724413793-11">%</span><span class="nc" data-group-id="2724413793-11">Post</span><span class="p" data-group-id="2724413793-11">{</span><span class="p" data-group-id="2724413793-11">}</span><span class="p" data-group-id="2724413793-10">)</span><span class="w">
+</span><span class="k" data-group-id="2724413793-9">end</span><span class="p" data-group-id="2724413793-8">)</span><span class="w">
 
 </span><span class="c1"># Roll back a transaction explicitly</span><span class="w">
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="1614573796-12">(</span><span class="k" data-group-id="1614573796-13">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
-  </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert!</span><span class="p" data-group-id="1614573796-14">(</span><span class="p" data-group-id="1614573796-15">%</span><span class="nc" data-group-id="1614573796-15">Post</span><span class="p" data-group-id="1614573796-15">{</span><span class="p" data-group-id="1614573796-15">}</span><span class="p" data-group-id="1614573796-14">)</span><span class="w">
-  </span><span class="k">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nc">Editor</span><span class="o">.</span><span class="n">post_allowed?</span><span class="p" data-group-id="1614573796-16">(</span><span class="n">p</span><span class="p" data-group-id="1614573796-16">)</span><span class="w"> </span><span class="k" data-group-id="1614573796-17">do</span><span class="w">
-    </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">rollback</span><span class="p" data-group-id="1614573796-18">(</span><span class="ss">:posting_not_allowed</span><span class="p" data-group-id="1614573796-18">)</span><span class="w">
-  </span><span class="k" data-group-id="1614573796-17">end</span><span class="w">
-</span><span class="k" data-group-id="1614573796-13">end</span><span class="p" data-group-id="1614573796-12">)</span><span class="w">
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span><span class="p" data-group-id="2724413793-12">(</span><span class="k" data-group-id="2724413793-13">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w">
+  </span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">insert!</span><span class="p" data-group-id="2724413793-14">(</span><span class="p" data-group-id="2724413793-15">%</span><span class="nc" data-group-id="2724413793-15">Post</span><span class="p" data-group-id="2724413793-15">{</span><span class="p" data-group-id="2724413793-15">}</span><span class="p" data-group-id="2724413793-14">)</span><span class="w">
+  </span><span class="k">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nc">Editor</span><span class="o">.</span><span class="n">post_allowed?</span><span class="p" data-group-id="2724413793-16">(</span><span class="n">p</span><span class="p" data-group-id="2724413793-16">)</span><span class="w"> </span><span class="k" data-group-id="2724413793-17">do</span><span class="w">
+    </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">rollback</span><span class="p" data-group-id="2724413793-18">(</span><span class="ss">:posting_not_allowed</span><span class="p" data-group-id="2724413793-18">)</span><span class="w">
+  </span><span class="k" data-group-id="2724413793-17">end</span><span class="w">
+</span><span class="k" data-group-id="2724413793-13">end</span><span class="p" data-group-id="2724413793-12">)</span><span class="w">
 
 </span><span class="c1"># With Ecto.Multi</span><span class="w">
 </span><span class="nc">Ecto.Multi</span><span class="o">.</span><span class="n">new</span><span class="w">
-</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Ecto.Multi</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="1614573796-19">(</span><span class="ss">:post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1614573796-20">%</span><span class="nc" data-group-id="1614573796-20">Post</span><span class="p" data-group-id="1614573796-20">{</span><span class="p" data-group-id="1614573796-20">}</span><span class="p" data-group-id="1614573796-19">)</span><span class="w">
+</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Ecto.Multi</span><span class="o">.</span><span class="n">insert</span><span class="p" data-group-id="2724413793-19">(</span><span class="ss">:post</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2724413793-20">%</span><span class="nc" data-group-id="2724413793-20">Post</span><span class="p" data-group-id="2724413793-20">{</span><span class="p" data-group-id="2724413793-20">}</span><span class="p" data-group-id="2724413793-19">)</span><span class="w">
 </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">transaction</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:transaction/2"><code class="inline">Ecto.Repo.transaction/2</code></a>.</p>
   </section>
@@ -1784,7 +1784,7 @@ see some examples in the <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Multi.html"
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">update(struct, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1838,12 +1838,12 @@ the returning changeset. This option can be used to avoid raising
   Example
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="n">post</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="7821818993-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="7821818993-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="n">post</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">get!</span><span class="p" data-group-id="1558798022-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="mi">42</span><span class="p" data-group-id="1558798022-1">)</span><span class="w">
 </span><span class="n">post</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Ecto.Changeset</span><span class="o">.</span><span class="n">change</span><span class="w"> </span><span class="n">post</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="w">
-</span><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update</span><span class="w"> </span><span class="n">post</span><span class="w"> </span><span class="k" data-group-id="7821818993-2">do</span><span class="w">
-  </span><span class="p" data-group-id="7821818993-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="7821818993-3">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Updated with success</span><span class="w">
-  </span><span class="p" data-group-id="7821818993-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="7821818993-4">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
-</span><span class="k" data-group-id="7821818993-2">end</span></code></pre>
+</span><span class="k">case</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update</span><span class="w"> </span><span class="n">post</span><span class="w"> </span><span class="k" data-group-id="1558798022-2">do</span><span class="w">
+  </span><span class="p" data-group-id="1558798022-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">struct</span><span class="p" data-group-id="1558798022-3">}</span><span class="w">       </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Updated with success</span><span class="w">
+  </span><span class="p" data-group-id="1558798022-4">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="n">changeset</span><span class="p" data-group-id="1558798022-4">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="c1"># Something went wrong</span><span class="w">
+</span><span class="k" data-group-id="1558798022-2">end</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:update/2"><code class="inline">Ecto.Repo.update/2</code></a>.</p>
   </section>
 </section>
@@ -1855,7 +1855,7 @@ the returning changeset. This option can be used to avoid raising
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">update!(struct, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1873,7 +1873,7 @@ the returning changeset. This option can be used to avoid raising
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature">update_all(queryable, updates, opts \\ [])</h1>
-      <a href="https://github.com/kamigari/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/kamigari/fintech/blob/master/lib/fintech/repo.ex#L2" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -1906,21 +1906,21 @@ remaining options.</p>
   Examples
 </h2>
 
-<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="1983990143-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-2">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="p" data-group-id="1983990143-2">]</span><span class="p" data-group-id="1983990143-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="0384376087-1">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-2">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="p" data-group-id="0384376087-2">]</span><span class="p" data-group-id="0384376087-1">)</span><span class="w">
 
-</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="1983990143-3">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">inc</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-4">[</span><span class="ss">visits</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="1983990143-4">]</span><span class="p" data-group-id="1983990143-3">)</span><span class="w">
+</span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="0384376087-3">(</span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">inc</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-4">[</span><span class="ss">visits</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="0384376087-4">]</span><span class="p" data-group-id="0384376087-3">)</span><span class="w">
 
-</span><span class="n">from</span><span class="p" data-group-id="1983990143-5">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">select</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">visits</span><span class="p" data-group-id="1983990143-5">)</span><span class="w">
-</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="1983990143-6">(</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-7">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="p" data-group-id="1983990143-7">]</span><span class="p" data-group-id="1983990143-6">)</span><span class="w">
+</span><span class="n">from</span><span class="p" data-group-id="0384376087-5">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">select</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">visits</span><span class="p" data-group-id="0384376087-5">)</span><span class="w">
+</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="0384376087-6">(</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-7">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="p" data-group-id="0384376087-7">]</span><span class="p" data-group-id="0384376087-6">)</span><span class="w">
 
-</span><span class="n">from</span><span class="p" data-group-id="1983990143-8">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">update</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-9">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-10">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="p" data-group-id="1983990143-10">]</span><span class="p" data-group-id="1983990143-9">]</span><span class="p" data-group-id="1983990143-8">)</span><span class="w">
-</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="1983990143-11">(</span><span class="p" data-group-id="1983990143-12">[</span><span class="p" data-group-id="1983990143-12">]</span><span class="p" data-group-id="1983990143-11">)</span><span class="w">
+</span><span class="n">from</span><span class="p" data-group-id="0384376087-8">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">update</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-9">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-10">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;New title&quot;</span><span class="p" data-group-id="0384376087-10">]</span><span class="p" data-group-id="0384376087-9">]</span><span class="p" data-group-id="0384376087-8">)</span><span class="w">
+</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="0384376087-11">(</span><span class="p" data-group-id="0384376087-12">[</span><span class="p" data-group-id="0384376087-12">]</span><span class="p" data-group-id="0384376087-11">)</span><span class="w">
 
-</span><span class="n">from</span><span class="p" data-group-id="1983990143-13">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">update</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-14">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-15">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="o">^</span><span class="n">new_title</span><span class="p" data-group-id="1983990143-15">]</span><span class="p" data-group-id="1983990143-14">]</span><span class="p" data-group-id="1983990143-13">)</span><span class="w">
-</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="1983990143-16">(</span><span class="p" data-group-id="1983990143-17">[</span><span class="p" data-group-id="1983990143-17">]</span><span class="p" data-group-id="1983990143-16">)</span><span class="w">
+</span><span class="n">from</span><span class="p" data-group-id="0384376087-13">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">update</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-14">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-15">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="o">^</span><span class="n">new_title</span><span class="p" data-group-id="0384376087-15">]</span><span class="p" data-group-id="0384376087-14">]</span><span class="p" data-group-id="0384376087-13">)</span><span class="w">
+</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="0384376087-16">(</span><span class="p" data-group-id="0384376087-17">[</span><span class="p" data-group-id="0384376087-17">]</span><span class="p" data-group-id="0384376087-16">)</span><span class="w">
 
-</span><span class="n">from</span><span class="p" data-group-id="1983990143-18">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">update</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-19">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1983990143-20">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="n">fragment</span><span class="p" data-group-id="1983990143-21">(</span><span class="s">&quot;upper(?)&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">^</span><span class="n">new_title</span><span class="p" data-group-id="1983990143-21">)</span><span class="p" data-group-id="1983990143-20">]</span><span class="p" data-group-id="1983990143-19">]</span><span class="p" data-group-id="1983990143-18">)</span><span class="w">
-</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="1983990143-22">(</span><span class="p" data-group-id="1983990143-23">[</span><span class="p" data-group-id="1983990143-23">]</span><span class="p" data-group-id="1983990143-22">)</span></code></pre>
+</span><span class="n">from</span><span class="p" data-group-id="0384376087-18">(</span><span class="n">p</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">Post</span><span class="p">,</span><span class="w"> </span><span class="ss">where</span><span class="p">:</span><span class="w"> </span><span class="n">p</span><span class="o">.</span><span class="n">id</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">update</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-19">[</span><span class="ss">set</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0384376087-20">[</span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="n">fragment</span><span class="p" data-group-id="0384376087-21">(</span><span class="s">&quot;upper(?)&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">^</span><span class="n">new_title</span><span class="p" data-group-id="0384376087-21">)</span><span class="p" data-group-id="0384376087-20">]</span><span class="p" data-group-id="0384376087-19">]</span><span class="p" data-group-id="0384376087-18">)</span><span class="w">
+</span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">MyRepo</span><span class="o">.</span><span class="n">update_all</span><span class="p" data-group-id="0384376087-22">(</span><span class="p" data-group-id="0384376087-23">[</span><span class="p" data-group-id="0384376087-23">]</span><span class="p" data-group-id="0384376087-22">)</span></code></pre>
 <p>Callback implementation for <a href="https://hexdocs.pm/ecto/3.2.5/Ecto.Repo.html#c:update_all/3"><code class="inline">Ecto.Repo.update_all/3</code></a>.</p>
   </section>
 </section>
