@@ -14,7 +14,7 @@ defmodule Fintech.MixProject do
 
       # Docs
       name: "fintech",
-      source_url: "https://github.com/kamigari",
+      source_url: "https://github.com/kamigari/fintech",
       docs: [
         main: "readme", # The main page in the docs
         extras: ["README.md"]
