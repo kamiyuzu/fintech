@@ -95,6 +95,8 @@ I never used doctests before and I tested some trivial functions because I didn'
 ### How would you improve your solution? What would be the next steps?
 My whole project can be improved in every technical area. I don't think I have the knowledge to say any of the areas I tried to implement are efficient enough or good enough. I still have a long journey into the Elixir path.
 
+I still have to implement the money inyection into a second account. I will need to test the kind of approach database-wise I would follow to achieve that. One would be just adding the account id, and the other one would be with an association.
+
 The next step would be to assign into the database the user. Although we can do transferences via iex and calling the GenServer, it would be really nice to do transferences from the transference new view from phoenix. However we first need to assign the user into the actual phoenix conn.
 
 I have done previously a project using github oauth [The-Complete-Elixir-and-Phoenix-Bootcamp](https://github.com/kamigari/The-Complete-Elixir-and-Phoenix-Bootcamp) related but not the solution we need. We would rather need a login form and assign that user into the phoenix connection.
